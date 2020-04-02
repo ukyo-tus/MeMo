@@ -1,9 +1,17 @@
 <template>
   <div id="app">
-    <h1>ukyoです</h1>
+    <SideBar />
+    <router-view />
   </div>
 </template>
 
-<style>
+<script>
+import SideBar from "@/components/SideBar.vue";
+export default {
+  components: {
+    SideBar
+  }
+};
+</script>
 
-</style>
+<style></style>
